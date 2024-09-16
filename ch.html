@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Insurance Application</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Cookie|Raleway:300,700,400');
+    * {
+      box-sizing: border-box;
+      font-size: 1em;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #02acc;
+      color: #333;
+      font-size: 18px;
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    }
+    .container {
+      border-radius: 0.5em;
+      box-shadow: 0 0 1em 0 rgba(51,51,51,0.25);
+      display: block;
+      max-width: 580px;
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2em;
+      width: 90%;
+      z-index: 1;
+    }
+    .container:before {
+/*      background: url('https://images.squarespace-cdn.com/content/v1/63fcef7520c24c213845d72c/7e03651f-7463-49f4-ad0f-8e9ecc84717f/website-2.png') center no-repeat;*/
+background-color: #02acac;
+      background-size: cover;
+      content: '';
+      filter: blur(10px);
+      height: 100vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      width: 100vw;
+    }
+    .container:after {
+      background: rgba(255,255,255,0.6);
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+    }
+    form button.submit {
+      background: rgba(255,255,255,0.25);
+      border: 1px solid #333;
+      line-height: 1em;
+      padding: 0.5em 0.5em;
+      transition: all 0.25s;
+    }
+    form button:hover,
+    form button:focus,
+    form button:active,
+    form button.loading {
+      background: #333;
+      color: #fff;
+      outline: none;
+    }
+    form button.success {
+      background: #27ae60;
+      border-color: #27ae60;
+      color: #fff;
+    }
+    form label {
+      border-bottom: 1px solid #333;
+      display: block;
+      font-size: 1.55em;
+      margin-bottom: 0.5em;
+      transition: all 0.25s;
+    }
+    form label input {
+      background: none;
+      border: none;
+      line-height: 1em;
+      font-weight: 300;
+      padding: 0.125em 0.25em;
+      width: 100%;
+    }
+    form label input:focus {
+      outline: none;
+    }
+    form label input:-webkit-autofill {
+      background-color: transparent !important;
+    }
+    form label span.label-text {
+      display: block;
+      font-size: 0.5em;
+      font-weight: bold;
+      padding-left: 0.5em;
+      text-transform: uppercase;
+      transition: all 0.25s;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0 0 0.5em 0;
+      text-align: center;
+      font-family: 'Cookie', cursive;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .logo img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        <a href="#" class="logo">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.cjI6TRCMfyRiefRsTOnCkwHaE8&pid=Api&P=0&h=220" alt="Authentic Collection">
+        </a>
+      </h1>
+    </header>
+    <h1 class="text-center">Sports Insurance Application</h1>
+    <form class="registration-form">
+      <!-- Personal Information -->
+      <label>
+        <span class="label-text">Full Name:</span>
+        <input type="text" id="fullname" name="fullname" required>
+      </label>
+      <label>
+        <span class="label-text">Email:</span>
+        <input type="email" id="email" name="email" required>
+      </label>
+      <label>
+        <span class="label-text">Phone Number:</span>
+        <input type="tel" id="phone" name="phone" required>
+      </label>
+      <label>
+        <span class="label-text">Date of Birth:</span>
+        <input type="date" id="dob" name="dob" required>
+      </label>
+      <label>
+        <span class="label-text">Address:</span>
+        <input type="text" id="address" name="address" required>
+      </label>
+
+      <!-- Insurance Details -->
+      <label>
+        <span class="label-text">Sport:</span>
+        <input type="text" id="sport" name="sport" required>
+      </label>
+      <div class="form-group">
+        <span class="label-text">Choose Plan:</span>
+        <label>
+          <input type="radio" id="planA" name="plan" value="Plan A" required>
+          Basic plan
+        </label>
+        <label>
+          <input type="radio" id="planB" name="plan" value="Plan B">
+          Standard Plan
+        </label>
+        <label>
+          <input type="radio" id="planC" name="plan" value="Plan C">
+          Plan C
+        </label>
+      </div>
+      <label>
+        <span class="label-text">Policy Duration (months):</span>
+        <input type="number" id="duration" name="duration" required>
+      </label>
+      <label>
+        <span class="label-text">Premium Amount:</span>
+        <input type="number" id="premium" name="premium" required>
+      </label>
+      
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button class="submit" type="submit">Submit Application</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

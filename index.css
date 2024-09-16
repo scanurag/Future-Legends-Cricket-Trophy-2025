@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("./res/images/cafeteria.png");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://images.squarespace-cdn.com/content/v1/63fcef7520c24c213845d72c/7e03651f-7463-49f4-ad0f-8e9ecc84717f/website-2.png");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -310,7 +310,7 @@ nav>a:hover{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("./res/images/315.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://media.licdn.com/dms/image/D4E22AQGs3MjyxIdIzQ/feedshare-shrink_800/0/1718889172353?e=2147483647&v=beta&t=fXJ5g-YwgjwZ1fp50evUYCVokqLaN5adWfYBB7bGulI");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -347,7 +347,7 @@ nav>a:hover{
     height: 50vh;
     width: 100%;
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("./res/images/coder.jpg");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://images.unsplash.com/photo-1562077772-3bd90403f7f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNyaWNrZXR8ZW58MHx8MHx8fDA%3D");
     background-position: center;
     background-size: cover;
     text-align: center;
